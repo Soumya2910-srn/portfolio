@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block header_content %}
+<h2>Welcome to my portfolio!</h2>
+<p>A showcase of my skills, projects and creative journey.</p>
+{% endblock header_content %}
+
+{% block content %}
+    <img src="{{ url_for('static', filename='images/srn.jpg') }}" alt="My Image" class="circle-image">
+    <div class="text-block">
+        {% block content1 %}
+        <h2>Hii, I am Soumya Ranjan Nayak.</h2>
+        <h3>I am currently pursuing my B.Tech degree under the domain of Computer Science and Engineering at GIET University.I have a strong foundation in C, Java, Python, and Data Structures & Algorithms. I also have hands-on experience with Flask for web development and a growing interest in Machine Learning.</h3>
+        {% endblock content1 %}
+    </div>
+{% endblock content %}
+
